@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Chimera-Dream World</title>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="jquery.spritely-0.1.js"></script>
+        <script src="portfolio.js"></script>
+        <script></script>
+    </head>
+    <body id="main_body">
+        <div id="main" class="background-div">
+            
+            <div class="topmost-div clearfix">
+                
+                <ul>
+                    <li id="about"><a href="#about-me" onclick="select_screen('about');">ABOUT ME</a></li>
+                    <li id="skill_ref" ><a href="#skill_section" onclick="select_screen('skill_ref');">SKILLS</a></li>
+                    <li><a href="home.html" id="home">HOME</a></li>
+                </ul>
+                
+            </div>
+            <div id="home_section" class="new_home">
+                <div id="sky"></div>
+                <div id="city1"></div>
+                <div id="city2"></div>
+                <div id="plane"></div>
+            </div>
+            <div id="contact_section" class="contacts-div">
+                <div id="contactID" class="footer">
+                    <ul>
+                        <li >
+                            <a title="Close" class="ft-icon cls-li" onclick="closeContact();"></a>
+                        </li>
+                        <li ><a title="LinkedIn" class=" ft-icon lnk-li"></a></li>
+                        <li ><a title="Email" class=" ft-icon email-li"></a></li>
+                        <li ><a title="Facebook" class=" ft-icon f-li"></a></li>
+                    </ul>
+                </div>
+                <div id="infoID" class="footer">
+                    <ul>
+                        <li title="Contact Info" class=" ft-icon info-li" onclick="showContact();"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="skill_section" class="skills">
+                <div id="cloud"></div>
+                <div id="sun"></div>
+                >
+                
+                <div id="direct" class="direction">
+                    <a href="#skill_section" onclick="select_screen('skill_ref');">
+                    <div id="guide"></div></a>
+                    <div id="l1" onclick="html_disp();">
+                        <a></a>
+                    </div>
+                    <div id="l2" onclick="css_disp();">
+                        <a></a>
+                    </div>
+                    <div id="l3" onclick="java_disp();">
+                        <a></a>
+                    </div>
+                    <div id="l4" onclick="jquery_disp();">
+                        <a></a>
+                    </div>
+                    <div id="l5">
+                        <a></a>
+                    </div>
+                </div>
+                <div id="h-board" class="html_board board hide inactive"></div>
+                <div id="c-board" class="css_board board hide inactive"></div>
+                <div id="j-board" class="java_board board hide inactive"></div>
+                <div id="jq-board" class="jquery_board board hide inactive"></div>
+                <div id="rd" class="road hide inactive"></div>
+                <div id="rd1" class="road1 hide inactive"></div>
+            </div>
+            <div id="about-me" class="nav-bar-div">
+                <div class="container" onmouseover="show_back();" onmouseout="remove_com();">
+                <div class="flipper">
+                        <div class="flip-card-front"></div>
+                        <div class="flip-card-back"></div>
+                </div>
+                </div>
+                <div id="com1" class="comment1 hide inactive"></div>
+                <div class="comment">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

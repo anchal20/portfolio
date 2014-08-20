@@ -1,0 +1,609 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.black {
+    background-color: black;
+    width: 100%;}
+.white {
+    background-color: #F0F5FF;
+    width: 100%;}
+.blue {
+    background-color: #A37AFF;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    width: 100%;}
+
+.background-div {
+    margin-bottom: -200px;
+    width: 100%;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.topmost-div {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 50;
+}
+
+.clearfix {
+    clear: both;   
+}
+
+.blank-div {
+    width: 100%;
+    height: 13px;
+}
+
+
+.hide{
+    display: none;
+}
+.show{
+    display:block;
+}
+.active{
+    opacity:1;
+}
+.inactive {
+    opacity: 0;
+}   
+
+
+.new_home {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background: black;
+}
+
+#sky {
+    width: 100%;
+    height: 416px;
+    position: absolute;
+    background: transparent url("Images/sky.jpg") 0 0px repeat-x;
+    animation: animate-sky 32s linear infinite;
+    -webkit-animation: animate-sky 32s linear infinite;
+    -moz-animation: animate-sky 32s linear infinite;
+    -o-animation: animate-sky 32s linear infinite;
+}
+
+@keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-webkit-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-moz-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-o-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+
+#city1{
+    width: 100%;
+    height: 416px;
+    top: 15%;
+    position: absolute;
+    background: transparent url("Images/city1.png") 0 130px repeat-x;
+    z-index: 10;
+    animation: animate-city1 30s linear infinite;
+    -webkit-animation: animate-city1 30s linear infinite;
+    -moz-animation: animate-city1 30s linear infinite;
+    -o-animation: animate-city1 30s linear infinite;
+}
+
+@keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-webkit-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-moz-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-o-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+
+#city2{
+    width: 100%;
+    height: 416px;
+    top: 15%;
+    position: absolute;
+    background: transparent url("Images/city2.png") 0 130px repeat-x;
+    z-index: 30;
+    animation: animate-city1 28s linear infinite;
+    -webkit-animation: animate-city1 28s linear infinite;
+    -moz-animation: animate-city1 28s linear infinite;
+    -o-animation: animate-city1 28s linear infinite;
+}
+
+#plane {
+    top: 8%;
+    margin-left: 10%;
+    width: 730px;
+    height: 167px;
+    position: absolute;
+    background: transparent url("Images/planesprite3.png") 0 50px no-repeat;
+}
+
+.top-div {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    border: 1px solid;
+}
+
+
+.skills {
+    width: 100%;
+    height: 650px; 
+    background: url(Images/skyBackground.jpg) repeat-x;
+}
+#sun {
+    width: 150px;
+    height: 150px;
+    background: url('Images/sun.png') no-repeat;
+    position: absolute;
+    left: 4%;
+    margin-top: 2%;
+}
+#cloud {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: 6;
+    background: url("Images/cloud1.png") 0 0px repeat-x;
+    animation: animate-cloud 8s linear infinite;
+    -webkit-animation: animate-cloud 8s linear infinite;
+    -moz-animation: animate-cloud 8s linear infinite;
+    -o-animation: animate-cloud 8s linear infinite;
+}
+
+#cloud1 {
+    width: 100%;
+    height: 150px;
+    margin-top: 7%;
+    z-index: 3;
+    position: absolute;
+    background: url("Images/cloud1.png") 0 0px repeat-x;
+    animation: animate-cloud 10s linear infinite;
+    -webkit-animation: animate-cloud 10s linear infinite;
+    -moz-animation: animate-cloud 10s linear infinite;
+    -o-animation: animate-cloud 10s linear infinite;
+}
+@keyframes animate-cloud {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-webkit-keyframes animate-cloud {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-moz-keyframes animate-cloud {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-o-keyframes animate-cloud {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+
+#grass {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    background: url("Images/grass4.png") 0 10px repeat-x;
+}
+.direction {
+    width: 215px;
+    height: 410px;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    background: url("Images/guide1.png") no-repeat;
+    left: 44%;
+}
+#guide {
+    background: url('Images/skill.png') 0% 100% no-repeat;
+    width: 106px;
+    height: 44px;
+    position: absolute;
+    top: 26px;
+    left:23%;
+}
+#guide:hover {
+    
+    background-position: 0% 0%;
+}
+#l1 {
+    background: url('Images/html.png') 0% 82% no-repeat;
+    width: 106px;
+    height: 44px;
+    position: absolute;
+    top: 26%;
+    left:2%;
+}
+#l1:hover {
+    background-position: 0% 0%;
+}
+
+#l2 {
+    background: url('Images/css.png') 0% 81% no-repeat;
+    width: 106px;
+    height: 44px;
+    position: absolute;
+    top: 29%;
+    left:41%;
+}
+#l2:hover {
+    background-position: 0% 0%;
+}
+
+#l3 {
+    background: url('Images/java.png') 0% 93% no-repeat;
+    width: 106px;
+    height: 44px;
+    position: absolute;
+    top: 40%;
+    left:6%;
+}
+#l3:hover {
+    left: 7%;
+    background-position: 0% 10%;
+}
+
+#l4 {
+    background: url('Images/jquery.png') 0% 88% no-repeat;
+    width: 106px;
+    height: 44px;
+    position: absolute;
+    top: 46%;
+    left:44%;
+}
+#l4:hover {
+    top:45%;
+    left:45%;
+    background-position: 10% 10%;
+}
+
+#l5 {
+    background: url('Images/coming1.png') 0% 88% no-repeat;
+    width: 106px;
+    height: 44px;
+    position: absolute;
+    top: 52%;
+    left:5%;
+}
+#l5:hover {    
+    background-position: 10% 0%;
+}  
+
+.html_mov {
+    left:80%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.css_mov {
+    left: 10%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.java_mov {
+    left: 80%;
+    transform: translateZ(-100px);
+    -webkit-transform: -webkit-translateZ(-100px);
+    -moz-transform: translateZ(-100px);
+    -o-transform: translateZ(-100px);
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+
+.jquery_mov {
+    left: 10%;
+    transform: translateZ(200px);
+    -webkit-transform: translateZ(200px);
+    -moz-transform: translateZ(200px);
+    -o-transform: translateZ(200px);
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+
+.board {
+    position: absolute;
+    width: 450px;
+    height: 330px;
+    z-index: 2;
+}
+.html_board {
+    left: -4%;
+    top:50%;
+    background: transparent url('Images/cartoon_wood_sign1.png') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.css_board {
+    left: 65%;
+    top:50%;
+    background: transparent url('Images/cartoon_wood_sign2.png') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.java_board {
+    left: -4%;
+    top:50%;
+    background: transparent url('Images/cartoon_wood_sign3.png') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.jquery_board {
+    left: 65%;
+    top:50%;
+    background: transparent url('Images/cartoon_wood_sign4.png') no-repeat;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.road {
+    top: 60%;
+    left: 45%;
+    width: 800px;
+    height: 250px;
+    z-index: 1;
+    position: absolute;
+    background:transparent url('Images/direj95yT.svg') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.road1 {
+    left: -6%;
+    top: 60%;
+    width: 800px;
+    height: 250px;
+    z-index: 1;
+    position: absolute;
+    background:transparent url('Images/direj95yT.svg') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+
+.nav-bar-div {
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+}
+
+
+.container {
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    border: 1px solid;
+    perspective: 800px;
+}
+
+.flipper {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+}
+
+.container:hover .flipper, .container.hover .flipper {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.container, .flip-card-front, .flip-card-back {
+    width: 330px;
+    height: 350px;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+    background: url('Images/me2.jpg') no-repeat;
+}
+
+.flip-card-back {
+    background: url('Images/me3.jpg') no-repeat;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.comment {
+    width: 760px;
+    height: 500px;
+    background:transparent url('Images/comment1.png') 0px 0px no-repeat;
+    position: absolute;
+    left: 40%;
+    top:15%;
+}
+.comment1 {
+    width: 380px;
+    height: 300px;
+    background:transparent url('Images/comment2.png') 0px 0px no-repeat;
+    position: absolute;
+    
+    -webkit-animation: com 2s linear;
+    -moz-animation: com 2s linear;
+    -o-animation: com 2s linear;
+    animation: com 2s linear;
+    left: -2%;
+    top: -6%;
+}
+
+@-webkit-keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@-o-keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+.contacts-div {
+    width: 100%;
+    height: 100px;
+    background-color: inherit;
+}
+
+.footer {
+    background: url("Images/bg_footer.png");
+    width: 100%;
+    height: 100px;
+    
+}
+
+.footer li {
+    float: right;
+    display: inline;
+}
+
+.ft-icon {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-top: 25px
+}
+
+ .f-li {
+    background: url("Images/facebook.png");
+}
+.lnk-li {
+    background: url("Images/linked-in.png");
+}
+.email-li {
+    background: url("Images/email.png");
+}
+.cls-li {
+    margin-right: 20px;
+    background: url("Images/close.png");
+}
+
+.info-li {
+    background: url("Images/info.png");
+    margin-right: 20px;
+}
+
+.topmost-div ul {
+    padding-top: 18px;
+}
+
+.topmost-div li {
+    float: right;
+    font-family: cursive;
+    display: inline;
+    border-width: none;
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 5px;
+    box-shadow: 7px 5px 2px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
