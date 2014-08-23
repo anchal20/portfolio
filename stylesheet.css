@@ -359,20 +359,12 @@ table {
 
 .java_mov {
     left: 75%;
-    transform: translateZ(-100px);
-    -webkit-transform: -webkit-translateZ(-100px);
-    -moz-transform: translateZ(-100px);
-    -o-transform: translateZ(-100px);
     transition-duration: 5s;
     transition-timing-function: ease-in-out;
 }
 
 .jquery_mov {
     left: 5%;
-    transform: translateZ(200px);
-    -webkit-transform: translateZ(200px);
-    -moz-transform: translateZ(200px);
-    -o-transform: translateZ(200px);
     transition-duration: 5s;
     transition-timing-function: ease-in-out;
 }
