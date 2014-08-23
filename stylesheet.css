@@ -47,11 +47,11 @@ table {
 	border-spacing: 0;
 }
 
-.black {
-    background-color: black;
+.orange {
+    background-color: #CC5200;
     width: 100%;}
-.white {
-    background-color: #F0F5FF;
+.sky-blue {
+    background-color: #ADD6FF;
     width: 100%;}
 .blue {
     background-color: #A37AFF;
@@ -59,10 +59,9 @@ table {
     transition-timing-function: ease-in-out;
     width: 100%;}
 
-.background-div {
-    margin-bottom: -200px;
-    width: 100%;
-    min-height: 100%;
+.wrapper {
+    width: 960px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -70,21 +69,40 @@ table {
 }
 
 .topmost-div {
-    width: 100%;
     height: 80px;
     position: fixed;
     z-index: 50;
+    width: 960px;
+    text-align: right;
+}
+
+.topmost-div ul {
+    padding-top: 18px;
+    list-style-type: none;
+    overflow: hidden;
+    list-style: none;
+}
+
+.topmost-div li {
+    display: inline;
+}
+
+.topmost-div a {
+    text-decoration: none;
+    text-transform: none;
+    font-family: cursive;
+    font-size: 23px;
+    display: inline;
+    border-width: none;
+    margin-top: 25px;
+    margin-right: 0px;
+    padding: 5px;
+    color: white;
 }
 
 .clearfix {
     clear: both;   
 }
-
-.blank-div {
-    width: 100%;
-    height: 13px;
-}
-
 
 .hide{
     display: none;
@@ -100,11 +118,11 @@ table {
 }   
 
 
-.new_home {
-    width: 100%;
-    height: 600px;
+.home {
+    height: 550px;
     overflow: hidden;
-    background: black;
+    background-color: #00001f;
+    margin-top: 6%;
 }
 
 #sky {
@@ -137,8 +155,8 @@ table {
 
 #city1{
     width: 100%;
-    height: 416px;
-    top: 15%;
+    height: 310px;
+    top: 43%;
     position: absolute;
     background: transparent url("Images/city1.png") 0 130px repeat-x;
     z-index: 10;
@@ -167,8 +185,8 @@ table {
 
 #city2{
     width: 100%;
-    height: 416px;
-    top: 15%;
+    height: 310px;
+    top: 46%;
     position: absolute;
     background: transparent url("Images/city2.png") 0 130px repeat-x;
     z-index: 30;
@@ -179,7 +197,7 @@ table {
 }
 
 #plane {
-    top: 8%;
+    top: 15%;
     margin-left: 10%;
     width: 730px;
     height: 167px;
@@ -197,8 +215,9 @@ table {
 
 .skills {
     width: 100%;
-    height: 650px; 
-    background: url(Images/skyBackground.jpg) repeat-x;
+    height: 580px; 
+    margin-top: 6%;
+    background: #EBF5FF url(Images/skyBackground.jpg) repeat-x;
 }
 #sun {
     width: 150px;
@@ -220,18 +239,7 @@ table {
     -o-animation: animate-cloud 8s linear infinite;
 }
 
-#cloud1 {
-    width: 100%;
-    height: 150px;
-    margin-top: 7%;
-    z-index: 3;
-    position: absolute;
-    background: url("Images/cloud1.png") 0 0px repeat-x;
-    animation: animate-cloud 10s linear infinite;
-    -webkit-animation: animate-cloud 10s linear infinite;
-    -moz-animation: animate-cloud 10s linear infinite;
-    -o-animation: animate-cloud 10s linear infinite;
-}
+
 @keyframes animate-cloud {
     from {background-position: 100% 0;}
     to {background-position: 0 0;}
@@ -249,22 +257,15 @@ table {
     to {background-position: 0 0;}
 }
 
-#grass {
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    z-index: 1;
-    position: absolute;
-    background: url("Images/grass4.png") 0 10px repeat-x;
-}
+
 .direction {
     width: 215px;
-    height: 410px;
+    height: 400px;
     bottom: 0;
     position: absolute;
     z-index: 10;
     background: url("Images/guide1.png") no-repeat;
-    left: 44%;
+    left: 40%;
 }
 #guide {
     background: url('Images/skill.png') 0% 100% no-repeat;
@@ -295,7 +296,7 @@ table {
     width: 106px;
     height: 44px;
     position: absolute;
-    top: 29%;
+    top: 30%;
     left:41%;
 }
 #l2:hover {
@@ -307,7 +308,7 @@ table {
     width: 106px;
     height: 44px;
     position: absolute;
-    top: 40%;
+    top: 41%;
     left:6%;
 }
 #l3:hover {
@@ -320,12 +321,12 @@ table {
     width: 106px;
     height: 44px;
     position: absolute;
-    top: 46%;
+    top: 47%;
     left:44%;
 }
 #l4:hover {
-    top:45%;
-    left:45%;
+    top:46%;
+    left:47%;
     background-position: 10% 10%;
 }
 
@@ -334,7 +335,7 @@ table {
     width: 106px;
     height: 44px;
     position: absolute;
-    top: 52%;
+    top: 53%;
     left:5%;
 }
 #l5:hover {    
@@ -342,19 +343,19 @@ table {
 }  
 
 .html_mov {
-    left:80%;
+    left:75%;
     transition-duration: 3s;
     transition-timing-function: ease-in-out;
 }
 
 .css_mov {
-    left: 10%;
+    left: 5%;
     transition-duration: 3s;
     transition-timing-function: ease-in-out;
 }
 
 .java_mov {
-    left: 80%;
+    left: 75%;
     transform: translateZ(-100px);
     -webkit-transform: -webkit-translateZ(-100px);
     -moz-transform: translateZ(-100px);
@@ -364,7 +365,7 @@ table {
 }
 
 .jquery_mov {
-    left: 10%;
+    left: 5%;
     transform: translateZ(200px);
     -webkit-transform: translateZ(200px);
     -moz-transform: translateZ(200px);
@@ -375,13 +376,13 @@ table {
 
 .board {
     position: absolute;
-    width: 450px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     z-index: 2;
 }
 .html_board {
     left: -4%;
-    top:50%;
+    top:53%;
     background: transparent url('Images/cartoon_wood_sign1.png') no-repeat;
     animation: com 4s linear;
     -webkit-animation: com 4s linear;
@@ -389,8 +390,8 @@ table {
     -o-animation: com 4s linear;
 }
 .css_board {
-    left: 65%;
-    top:50%;
+    left: 67%;
+    top:53%;
     background: transparent url('Images/cartoon_wood_sign2.png') no-repeat;
     animation: com 4s linear;
     -webkit-animation: com 4s linear;
@@ -399,7 +400,7 @@ table {
 }
 .java_board {
     left: -4%;
-    top:50%;
+    top:53%;
     background: transparent url('Images/cartoon_wood_sign3.png') no-repeat;
     animation: com 4s linear;
     -webkit-animation: com 4s linear;
@@ -407,18 +408,18 @@ table {
     -o-animation: com 4s linear;
 }
 .jquery_board {
-    left: 65%;
-    top:50%;
+    left: 67%;
+    top:53%;
     background: transparent url('Images/cartoon_wood_sign4.png') no-repeat;
     -webkit-animation: com 4s linear;
     -moz-animation: com 4s linear;
     -o-animation: com 4s linear;
 }
 .road {
-    top: 60%;
-    left: 45%;
+    bottom: 0;
+    left: 5%;
     width: 800px;
-    height: 250px;
+    height: 200px;
     z-index: 1;
     position: absolute;
     background:transparent url('Images/direj95yT.svg') no-repeat;
@@ -428,10 +429,10 @@ table {
     -o-animation: com 4s linear;
 }
 .road1 {
-    left: -6%;
-    top: 60%;
+    left: -30%;
+    bottom: 0;
     width: 800px;
-    height: 250px;
+    height: 200px;
     z-index: 1;
     position: absolute;
     background:transparent url('Images/direj95yT.svg') no-repeat;
@@ -441,17 +442,17 @@ table {
     -o-animation: com 4s linear;
 }
 
-.nav-bar-div {
+.abtme_section {
     overflow: hidden;
     width: 100%;
-    height: 700px;
+    height: 550px;
+    margin-top: 6%;
 }
 
 
 .container {
     position: absolute;
     top: 27%;
-    left: 10%;
     border: 1px solid;
     perspective: 800px;
 }
@@ -502,11 +503,11 @@ table {
 }
 
 .comment {
-    width: 760px;
+    width: 700px;
     height: 500px;
     background:transparent url('Images/comment1.png') 0px 0px no-repeat;
     position: absolute;
-    left: 40%;
+    left: 30%;
     top:15%;
 }
 .comment1 {
@@ -514,7 +515,6 @@ table {
     height: 300px;
     background:transparent url('Images/comment2.png') 0px 0px no-repeat;
     position: absolute;
-    
     -webkit-animation: com 2s linear;
     -moz-animation: com 2s linear;
     -o-animation: com 2s linear;
@@ -546,15 +546,15 @@ table {
 
 .contacts-div {
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: inherit;
 }
 
 .footer {
     background: url("Images/bg_footer.png");
+    background-position: -1px;
     width: 100%;
-    height: 100px;
-    
+    height: 70px;
 }
 
 .footer li {
@@ -588,22 +588,3 @@ table {
     margin-right: 20px;
 }
 
-.topmost-div ul {
-    padding-top: 18px;
-}
-
-.topmost-div li {
-    float: right;
-    font-family: cursive;
-    display: inline;
-    border-width: none;
-    margin-top: 25px;
-    margin-right: 20px;
-    padding: 5px;
-    box-shadow: 7px 5px 2px;
-    background-color: white;
-}
-
-a {
-    text-decoration: none;
-}
