@@ -28,6 +28,7 @@ function reset() {
 function select_screen(screen_id) {
     var id = screen_id;
     reset();
+    
     if (id=='skill_ref'){
         $('#main_body').removeClass("orange blue").addClass("sky-blue");
         $("#skill_section").removeClass("hide inactive").addClass("active show");
@@ -41,6 +42,13 @@ function select_screen(screen_id) {
         $("#home_section").removeClass("active show").addClass("hide inactive");
         $("#contact_section").removeClass("active show").addClass("hide inactive");
         $("#about-me").removeClass("inactive hide").addClass("show active");
+    }
+    else if (id=='home') {
+        $('#main_body').removeClass("blue sky-blue").addClass("orange");
+        $("#skill_section").removeClass("active show").addClass("inactive hide");
+        $("#home_section").removeClass("inactive hide").addClass("active show");
+        $("#contact_section").removeClass("inactive hide").addClass("active show");
+        $("#about-me").removeClass("active show").addClass("inactive hide");
     }
         
 }

@@ -49,9 +49,13 @@ table {
 
 .orange {
     background-color: #CC5200;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     width: 100%;}
 .sky-blue {
     background-color: #ADD6FF;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     width: 100%;}
 .blue {
     background-color: #A37AFF;
@@ -95,8 +99,6 @@ table {
     display: inline;
     border-width: none;
     margin-top: 25px;
-    margin-right: 0px;
-    padding: 5px;
     color: white;
 }
 
@@ -228,7 +230,7 @@ table {
     margin-top: 2%;
 }
 #cloud {
-    width: 100%;
+    width: 90%;
     height: 150px;
     position: absolute;
     z-index: 6;
