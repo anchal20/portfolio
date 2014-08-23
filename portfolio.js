@@ -38,10 +38,10 @@ function select_screen(screen_id) {
     }
     else if (id=='about') {
         $('#main_body').removeClass("orange sky-blue").addClass("blue");
+        $("#about-me").removeClass("inactive hide").addClass("show active");
         $("#skill_section").removeClass("show active").addClass("inactive hide");
         $("#home_section").removeClass("active show").addClass("hide inactive");
         $("#contact_section").removeClass("active show").addClass("hide inactive");
-        $("#about-me").removeClass("inactive hide").addClass("show active");
     }
     else if (id=='home') {
         $('#main_body').removeClass("blue sky-blue").addClass("orange");
