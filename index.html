@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Chimera-Dream World</title>
+        <link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
         <link type="text/css" rel="stylesheet" href="stylesheet.css" />
         <script src="jquery-1.11.1.min.js"></script>
         <script src="jquery.spritely-0.1.js"></script>
@@ -15,12 +16,12 @@
         <div id="main" class="wrapper">            
             <div class="topmost-div">                
                 <ul>
-                    <li id="home"><a href="#home" onclick="select_screen('home')">HOME |</a></li>
+                    <li id="home_ref"><a href="#home" onclick="select_screen('home_ref')">HOME |</a></li>
                     <li id="about"><a href="#about-me" onclick="select_screen('about');">ABOUT ME |</a></li>
                     <li id="skill_ref" ><a href="#skill_section" onclick="select_screen('skill_ref');">SKILLS</a></li>
                 </ul>                
             </div>
-            <div id="home_section" class="home">
+            <div id="home" class="home">
                 <div id="sky"></div>
                 <div id="city1"></div>
                 <div id="city2"></div>
@@ -32,9 +33,9 @@
                         <li >
                             <a title="Close" class="ft-icon cls-li" onclick="closeContact();"></a>
                         </li>
-                        <li ><a title="LinkedIn" class=" ft-icon lnk-li"></a></li>
-                        <li ><a title="Email" class=" ft-icon email-li"></a></li>
-                        <li ><a title="Facebook" class=" ft-icon f-li"></a></li>
+                        <li ><a href="https://www.linkedin.com/pub/anchal-sachdeva/27/573/2ab" target="_blank" title="LinkedIn" class=" ft-icon lnk-li"></a></li>
+                        <li ><a href="mailto:anchalsachdeva20@gmail.com" title="Email" class=" ft-icon email-li"></a></li>
+                        <li ><a href="https://www.facebook.com/anchal.sachdeva.7" target="_blank" title="Facebook" class=" ft-icon f-li"></a></li>
                     </ul>
                 </div>
                 <div id="infoID" class="footer">
@@ -43,11 +44,11 @@
                     </ul>
                 </div>
             </div>
-            <div id="skill_section" class="skills">
+            <div id="skill" class="skills">
                 <div id="cloud"></div>
                 <div id="sun"></div>                
                 <div id="direct" class="direction">
-                    <a href="#skill_section" onclick="select_screen('skill_ref');">
+                    <a href="#skill" onclick="select_screen('skill_ref');">
                     <div id="guide"></div></a>
                     <div id="l1" onclick="html_disp();">
                         <a></a>
@@ -79,8 +80,18 @@
                         <div class="flip-card-back"></div>
                 </div>
                 </div>
-                <div id="com1" class="comment1 hide inactive"></div>
-                <div class="comment"></div>
+                <div id="com1" class="comment comment1 hide inactive">
+                    <p>"All work and no play makes Jack and <b>Anchal</b> a dull person!!"</p><br>
+                    <p>Yes, I am enthusiastic sports person, with special interest in Cricket.</p><br>
+                    <p>I have won <u>best woman player</u> and <u>best fielder</u> awards at Intra and Inter Corporate Cricket tournaments respectively.</p>
+                </div>
+                <div class="comment comment2"><p>Hello Fellas!!</p></div>
+                <div id="abt" class="comment comment1">
+                    <p id="abt1">I am a front-end developer, passionate to bring my imagination to reality.</p><br>
+                    <p id="abt2">My recent project introduced me to the AWESOME technologies - HTML5, CSS, JavaScript and JQuery.
+                    That's when I decided to be a part of this Awesomeness.</p><br>
+                    <p id="abt4">I like to explore and do things differently which helps me learn all the more.</p>
+                </div>
             </div>
         </div>
     </body>

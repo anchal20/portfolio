@@ -95,12 +95,16 @@ table {
 .topmost-div a {
     text-decoration: none;
     text-transform: none;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 23px;
     display: inline;
     border-width: none;
     margin-top: 25px;
     color: white;
+}
+
+.underline {
+    bottom: 1px white;
 }
 
 .clearfix {
@@ -500,45 +504,52 @@ table {
 }
 
 .comment {
-    float: right;
-    width: 680px;
-    height: 450px;
-    background:transparent url('Images/comment1.png') 0px 0px no-repeat;
+    font-family: 'Dancing Script', cursive;
+    text-align:justify;
+    font-size: 30px;
     position: absolute;
-    left: 30%;
-    top:17%;
+    -webkit-animation: com 2s ease-in-out;
+    -moz-animation: com 2s ease-in-out;
+    -o-animation: com 2s ease-in-out;
+    animation: com 2s ease-in-out;
 }
-.comment1 {
-    width: 350px;
-    height: 250px;
-    background:transparent url('Images/comment2.png') 0px 0px no-repeat;
-    position: absolute;
-    -webkit-animation: com 2s linear;
-    -moz-animation: com 2s linear;
-    -o-animation: com 2s linear;
-    animation: com 2s linear;
-    left: -2%;
-    top: -1%;
+
+.comment2{
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    font-size: 60px;    
+}
+.comment1{
+    float: right;
+    width: 550px;
+    height: 330px;
+    left: 40%;
+    top:25%;
+    padding-top: 6%;
+}
+
+.special {
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
 }
 
 @-webkit-keyframes com {
     0% {opacity: 0;}
-    50% {opacity: 0.5;}
     100% {opacity: 1;}
 }
 @-moz-keyframes com {
     0% {opacity: 0;}
-    50% {opacity: 0.5;}
     100% {opacity: 1;}
 }
 @-o-keyframes com {
     0% {opacity: 0;}
-    50% {opacity: 0.5;}
     100% {opacity: 1;}
 }
 @keyframes com {
     0% {opacity: 0;}
-    50% {opacity: 0.5;}
     100% {opacity: 1;}
 }
 

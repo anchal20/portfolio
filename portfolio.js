@@ -2,8 +2,8 @@
 $(document).ready(function(){   
     $("#main_body").addClass("orange");
     $("#about-me").removeClass("active show").addClass("hide inactive");
-    $("#skill_section").removeClass("active show").addClass("inactive hide");
-    $("#home_section").removeClass("inactive hide").addClass("show active");
+    $("#skill").removeClass("active show").addClass("inactive hide");
+    $("#home").removeClass("inactive hide").addClass("show active");
     
     $("#contactID").hide();
     
@@ -31,22 +31,22 @@ function select_screen(screen_id) {
     
     if (id=='skill_ref'){
         $('#main_body').removeClass("orange blue").addClass("sky-blue");
-        $("#skill_section").removeClass("hide inactive").addClass("active show");
-        $("#home_section").removeClass("active show").addClass("hide inactive");
+        $("#skill").removeClass("hide inactive").addClass("active show");
+        $("#home").removeClass("active show").addClass("hide inactive");
         $("#contact_section").removeClass("active show").addClass("hide inactive");
         $("#about-me").removeClass("active show").addClass("hide inactive");
     }
     else if (id=='about') {
         $('#main_body').removeClass("orange sky-blue").addClass("blue");
         $("#about-me").removeClass("inactive hide").addClass("show active");
-        $("#skill_section").removeClass("show active").addClass("inactive hide");
-        $("#home_section").removeClass("active show").addClass("hide inactive");
+        $("#skill").removeClass("show active").addClass("inactive hide");
+        $("#home").removeClass("active show").addClass("hide inactive");
         $("#contact_section").removeClass("active show").addClass("hide inactive");
     }
-    else if (id=='home') {
+    else if (id=='home_ref') {
         $('#main_body').removeClass("blue sky-blue").addClass("orange");
-        $("#skill_section").removeClass("active show").addClass("inactive hide");
-        $("#home_section").removeClass("inactive hide").addClass("active show");
+        $("#skill").removeClass("active show").addClass("inactive hide");
+        $("#home").removeClass("inactive hide").addClass("active show");
         $("#contact_section").removeClass("inactive hide").addClass("active show");
         $("#about-me").removeClass("active show").addClass("inactive hide");
     }
@@ -71,10 +71,10 @@ function showContact() {
 function html_disp() {
     $('#direct').addClass("html_mov").removeClass("css_mov java_mov jquery_mov");
     $('#h-board').removeClass("hide inactive").addClass("show active");
+    $('#rd1').removeClass("hide inactive").addClass("show active");
     $('#c-board').removeClass("show active").addClass("hide inactive");
     $('#j-board').removeClass("show active").addClass("hide inactive");
     $('#jq-board').removeClass("show active").addClass("hide inactive");
-    $('#rd1').removeClass("hide inactive").addClass("show active");
     $('#rd').removeClass("show active").addClass("hide inactive");
 }
 
@@ -112,8 +112,10 @@ function jquery_disp() {
 /************************************** about me ****************************************/
 function show_back() {
     $('#com1').removeClass("hide inactive").addClass("show active");
+    $('#abt').hide();
 }
 function remove_com() {
     $('#com1').removeClass("show active").addClass("hide inactive");
+    $('#abt').show();
 }
 /****************************************************************************************/
