@@ -113,9 +113,11 @@ function jquery_disp() {
 function show_back() {
     $('#com1').removeClass("hide inactive").addClass("show active");
     $('#abt').hide();
+    $('#com3').hide();
 }
 function remove_com() {
     $('#com1').removeClass("show active").addClass("hide inactive");
     $('#abt').show();
+    $('#com3').show();    
 }
 /****************************************************************************************/

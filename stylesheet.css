@@ -286,6 +286,14 @@ table {
     
     background-position: 0% 0%;
 }
+#know {
+    background: url(Images/know.png) no-repeat;
+    height: 30px;
+    width: 170px;
+    position: absolute;
+    top: 15%;
+    left: 18%;        
+}
 #l1 {
     background: url('Images/html.png') 0% 82% no-repeat;
     width: 106px;
@@ -527,6 +535,11 @@ table {
     left: 40%;
     top:25%;
     padding-top: 6%;
+}
+.comment3 {
+    top: 84%;
+    left:9%;
+    font-size: 25px;
 }
 
 .special {
